@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(204, 72, 72, 0.61);
+    color: rgb(32, 10, 10);
+    font-family: "Syne Mono", monospace;
+}
+
+h1 {
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: rgb(197, 21, 21);
+    text-decoration: none;
+    font-weight:bold;
+}
+
+a:hover {
+    color: red;
+}
+
+.heading {
+    color: rgb(33, 36, 34);
+    font-weight: bolder;
+}
+
+.main {
+    margin: auto;
+    width: 82%;
+    /* text-align: justify; */
+}
+
+.contact-links li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.contact-links {
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-list {
+    text-align: left;
+}
+
+#dp {
+    clip-path: circle();
+    width: 200px; 
+    height: 200px;
+}
+
+/* #dp-name {
+    padding-left: 50px;
+}
+
+#dp-div {
+    display: flex; 
+    width: 100%; 
+}  */
+
+.topnav a {
+    /* float: left;
+    display: block; */
+    color: #f2f2f2;
+    padding-right: 16px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: bold;
+    box-shadow: black 0.2em 0.2em 0.2em
+}
+
+.home {
+    background-color: rgb(143, 73, 73);
+    color: #f5eded;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+.topnav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.topnav a:active {
+    color: black;
+}
+
+#dp-name {
+    margin-top: 0;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    #dp-name {
+        padding-left: 50px;
+        margin-top: 10;
+    }
+    
+    #dp-div {
+        display: flex; 
+        width: 100%; 
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .topnav a:not(:first-child)  {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
